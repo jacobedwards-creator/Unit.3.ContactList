@@ -1,42 +1,68 @@
-#root {
-  max-width: 1280px;
+.app-container {
+  max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+.selected-contact {
+  width: 100%;
+  max-width: 800px; 
+  background: #6d3aa7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 20px 0; 
+}
+
+.contact-details {
+  margin: 20px 0;
+}
+
+.contact-details p {
+  margin: 8px 0;
+}
+
+.address, .company {
+  margin-top: 20px;
+  padding: 15px;
+  background: #242323;
+  border-radius: 4px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.back-button {
+  padding: 8px 16px;
+  background: #8400ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.back-button:hover {
+  background: #360068;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+table {
+  width: 100%;
+  max-width: 800px; 
+  border-collapse: collapse;
+  margin: 20px 0; 
 }
 
-.card {
-  padding: 2em;
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 
-.read-the-docs {
-  color: #888;
+tr:hover {
+  background-color: #6d3aa7;
+  cursor: pointer;
 }
+
